@@ -1,7 +1,23 @@
+2014-08-25 09:52:43 -0400 Marc-André Moreau (440916e) 
+
+	* Merge pull request #2061 from bmiklautz/remove_winpr_configh (HEAD,
+          origin/stable-1.1)
+
+2014-08-24 14:31:13 +0200 Bernhard Miklautz (6d2d377) 
+
+	* Get rid of winpr/config.h
+
+2014-08-18 13:07:30 -0400 Marc-André Moreau (6fc97c7) 
+
+	* Merge pull request #2040 from dpoe/stable-1.1
+
+2014-08-15 15:45:06 -0600 Daryl Poe (248c918) 
+
+	* handle user@corp.net username correctly
+
 2014-08-09 21:06:40 +0200 Bernhard Miklautz (b07a5c1) 
 
 	* Merge pull request #2031 from bmiklautz/fix/stable-1.1/ffmpeg2
-          (HEAD, origin/stable-1.1)
 
 2014-08-08 16:04:49 +0200 Bernhard Miklautz (dc7f6ab) 
 
