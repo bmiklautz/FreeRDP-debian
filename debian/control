@@ -556,7 +556,7 @@ Description: Windows Portable Runtime library (library)
  used instead of the equivalent WinPR implementation, without having to modify
  the code using it.
  .
- This package contains the winor-library shared library.
+ This package contains the winpr-library shared library.
 
 Package: libwinpr-path0.1
 Architecture: any
