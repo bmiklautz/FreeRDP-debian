@@ -10,6 +10,7 @@ Build-Depends:
  cdbs,
  autotools-dev,
  cmake,
+ dpkg-dev (>= 1.16.1.1),
  libasound2-dev,
  libcups2-dev,
  libpcsclite-dev,
