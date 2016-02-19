@@ -28,7 +28,7 @@ Build-Depends:
  xmlto,
  libavcodec-dev,
  libxi-dev,
- libusb-dev,
+ libusb-1.0-0-dev,
  libudev-dev,
  uuid-dev,
 Standards-Version: 3.9.6
