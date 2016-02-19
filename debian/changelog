@@ -1,3 +1,50 @@
+freerdp (1.1.0~git20140921.1.440916e+dfsg1-6) unstable; urgency=medium
+
+  [ Sriram Raghunathan ]
+  * debian/control:
+    + Fix typo in control file which is used to show package info. (Closes:
+      #768855).
+
+  [ Lionel Elie Mamane ]
+  * Enable URBDRC (USB redirection) channel. (Closes: #788005).
+
+  [ Alex 'AdUser' Z ]
+  * debian/patches:
+    + Add 1010_libudev-link.patch. Fix linking against libudev if building
+      USB redirection channel is enabled.
+
+  [ Mike Gabriel ]
+  * debian/{control,rules}:
+    + Drop B-D: libgstreamer-plugins-base0.10-dev. This requires disabling
+      gstreamer support and is a wanted and temporary regression. With
+      upcoming freerdp2 upload to Debian, gstreamer1.0 support will be
+      (re-)introduced. (Closes: #785898).
+  * debian/control:
+    + Add B-Ds: libusb-1.0-0-dev, libudev-dev, libdbus-glib-1-dev, uuid-dev.
+    + Use encrypted URLs for Vcs-*: field.
+    + Versioned B-D on dpkg-dev (>= 1.16.1.1).
+  * debian/rules:
+    + Enable all hardening flags.
+  * debian/patches:
+    + Add 0005_release-keys-when-xfreerdp-is-unfocused-to-prevent-s.patch.
+      Prevent Alt key from getting "stuck" with -grab-keyboard option when
+      using Alt-Tab to switch between local X windows. Thanks to Petr
+      Vorel <petr.vorel@gmail.com> for providing the patch. (Closes: #778650).
+    + Add 0006_fix-null-cert-that-is-not-an-error.patch. Fix null certificate
+      that is not an error. Thanks to Nathan Schulte for referencing the
+      upstream commit. Patch backported by myself to this freerdp Git snapshot.
+      (Closes: #803891).
+    + Add 0007_Fix-build-failure-on-x32.patch. Fix FTBFS on x32 architecture.
+      Thanks to Adam Borowski for providing this patch. (Closes: #808503).
+    + Add 1012_typo-fix.patch. Fix spelling of the work "occurred".
+
+  [ Andreas Cadhalpun ]
+  * debian/patches:
+    + Add 1011_ffmpeg-2.9.patch. Fix FTBFS against ffmpeg-2.9. (Closes:
+      #803814).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 19 Feb 2016 09:02:00 +0100
+
 freerdp (1.1.0~git20140921.1.440916e+dfsg1-5) unstable; urgency=medium
 
   * debian/patches:
