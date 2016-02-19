@@ -30,6 +30,7 @@ Build-Depends:
  libxi-dev,
  libusb-1.0-0-dev,
  libudev-dev,
+ libdbus-glib-1-dev,
  uuid-dev,
 Standards-Version: 3.9.6
 Homepage: http://www.freerdp.com/
