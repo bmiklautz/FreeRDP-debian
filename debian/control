@@ -29,6 +29,7 @@ Build-Depends:
  libavcodec-dev,
  libxi-dev,
  libusb-dev,
+ libudev-dev,
  uuid-dev,
 Standards-Version: 3.9.6
 Homepage: http://www.freerdp.com/
