@@ -29,6 +29,8 @@ Build-Depends:
  libavcodec-dev,
  libxi-dev,
  libgstreamer-plugins-base0.10-dev,
+ libusb-dev,
+ uuid-dev,
 Standards-Version: 3.9.6
 Homepage: http://www.freerdp.com/
 Vcs-Browser: http://anonscm.debian.org/gitweb?p=collab-maint/freerdp.git

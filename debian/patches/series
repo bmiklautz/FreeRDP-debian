@@ -6,6 +6,7 @@
 1006_test-unicode-endianess.patch
 1007_detect-arm-arch-correctly.patch
 1008_gcc-fPIC-on-arm64.patch
+1009_libusb-debug.patch
 2001_detect-ffmpeg-on-Debian.patch
 0001_fix-cmdline-parser.patch
 0002_handle-old-style-cmdline-options.patch
