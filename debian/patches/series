@@ -12,3 +12,4 @@
 0002_handle-old-style-cmdline-options.patch
 0003_copy-data-when-adding-glyph-to-cache.patch
 0004_build-cmake-3.1-compatibility.patch
+1010_libudev-link.patch
