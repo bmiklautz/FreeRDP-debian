@@ -26,7 +26,7 @@ DEB_CMAKE_EXTRA_FLAGS :=  -DCMAKE_INSTALL_INCLUDEDIR=include/$(shell dpkg-archit
                           -DBUILD_TESTING=ON \
                           -DWITH_SERVER=OFF \
                           -DWITH_PULSE=ON \
-                          -DWITH_GSTREAMER=ON \
+                          -DWITH_GSTREAMER=OFF \
                           -DWITH_CHANNELS=ON \
                           -DSTATIC_CHANNELS=off \
                           -DWITH_CUPS=on \

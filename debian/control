@@ -28,7 +28,6 @@ Build-Depends:
  xmlto,
  libavcodec-dev,
  libxi-dev,
- libgstreamer-plugins-base0.10-dev,
  libusb-dev,
  uuid-dev,
 Standards-Version: 3.9.6
