@@ -17,3 +17,4 @@
 0005_release-keys-when-xfreerdp-is-unfocused-to-prevent-s.patch
 0006_fix-null-cert-that-is-not-an-error.patch
 0007_Fix-build-failure-on-x32.patch
+1012_typo-fix.patch
