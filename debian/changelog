@@ -1,3 +1,11 @@
+freerdp (1.1.0~git20140921.1.440916e+dfsg1-7) unstable; urgency=medium
+
+  * debian/rules:
+    + Fix missing backslash in list of configure arguments. (Closes: #815317).
+      Thanks to Emilio Pozuelo Monfort for spotting this.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 20 Feb 2016 22:41:45 +0100
+
 freerdp (1.1.0~git20140921.1.440916e+dfsg1-6) unstable; urgency=medium
 
   [ Sriram Raghunathan ]
