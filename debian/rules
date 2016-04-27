@@ -13,6 +13,13 @@ else
 ARM_FLOAT_ABI =
 endif
 
+DEB_BUILD_ARCH_OS=$(shell dpkg-architecture -qDEB_BUILD_ARCH_OS)
+ifneq (,$(filter linux,$(DEB_BUILD_ARCH_OS)))
+LINUX_URBDRC_CLIENT = -DCHANNEL_URBDRC_CLIENT=on
+else
+LINUX_URBDRC_CLIENT = -DCHANNEL_URBDRC_CLIENT=off
+endif
+
 include /usr/share/cdbs/1/class/cmake.mk
 include /usr/share/cdbs/1/rules/debhelper.mk
 include /usr/share/cdbs/1/rules/utils.mk
@@ -31,7 +38,7 @@ DEB_CMAKE_EXTRA_FLAGS :=  -DCMAKE_INSTALL_INCLUDEDIR=include/$(shell dpkg-archit
                           -DWITH_CUPS=on \
                           -DWITH_PCSC=on \
                           -DWITH_JPEG=on \
-                          -DCHANNEL_URBDRC_CLIENT=on \
+                          $(LINUX_URBDRC_CLIENT) \
                           $(ARM_FLOAT_ABI) \
                           $(NULL)
 
