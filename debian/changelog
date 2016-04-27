@@ -1,3 +1,18 @@
+freerdp (1.1.0~git20140921.1.440916e+dfsg1-8) unstable; urgency=medium
+
+  * debian/rules:
+    + Use DEB_BUILD_ARCH, rather than DEB_HOST_ARCH when detecting armhf build
+      system.
+  * debian/{control,rules}:
+    + Build with -DCHANNEL_URBDRC_CLIENT=on only on Linux OSes. (Closes:
+      #815614).
+  * debian/control:
+    + Bump Standards: to 3.9.7. No changes needed.
+    + Add recent MS Windows releases to LONG_DESCRIPTION (of bin:pkg
+      freerdp-x11).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 27 Apr 2016 21:35:58 +0200
+
 freerdp (1.1.0~git20140921.1.440916e+dfsg1-7) unstable; urgency=medium
 
   * debian/rules:
