@@ -26,7 +26,7 @@ include /usr/share/cdbs/1/rules/utils.mk
 
 DEB_DH_INSTALL_ARGS += --fail-missing
 
-DEB_CMAKE_EXTRA_FLAGS :=  -DCMAKE_INSTALL_INCLUDEDIR=include/$(shell dpkg-architecture -qDEB_BUILD_MULTIARCH) \
+DEB_CMAKE_EXTRA_FLAGS :=  -DCMAKE_INSTALL_INCLUDEDIR=include/$(shell dpkg-architecture -qDEB_HOST_MULTIARCH) \
                           -DCMAKE_SKIP_RPATH=FALSE \
                           -DCMAKE_SKIP_INSTALL_RPATH=TRUE \
                           -DBUILD_TESTING=ON \
@@ -98,8 +98,8 @@ DEB_DH_STRIP_ARGS_freerdp-x11 = --dbg-package=freerdp-x11-dbg
 DEB_DH_STRIP_ARGS_libxfreerdp-client1.1 = --dbg-package=libxfreerdp-client-dbg
 
 remove-cruft::
-	rm -f debian/tmp/usr/lib/$(shell dpkg-architecture -qDEB_BUILD_MULTIARCH)/libwinpr-makecert-tool.a
-	rm -f debian/tmp/usr/lib/$(shell dpkg-architecture -qDEB_BUILD_MULTIARCH)/freerdp/cliprdr-client.a
+	rm -f debian/tmp/usr/lib/$(shell dpkg-architecture -qDEB_HOST_MULTIARCH)/libwinpr-makecert-tool.a
+	rm -f debian/tmp/usr/lib/$(shell dpkg-architecture -qDEB_HOST_MULTIARCH)/freerdp/cliprdr-client.a
 
 tweak-install::
 	@echo "Nothing to tweak after installation."
