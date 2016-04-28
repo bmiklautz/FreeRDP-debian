@@ -6,15 +6,15 @@ include /usr/share/dpkg/buildflags.mk
 
 NULL =
 
-DEB_BUILD_ARCH=$(shell dpkg-architecture -qDEB_BUILD_ARCH)
-ifneq (,$(filter armhf,$(DEB_BUILD_ARCH)))
+DEB_HOST_ARCH=$(shell dpkg-architecture -qDEB_HOST_ARCH)
+ifneq (,$(filter armhf,$(DEB_HOST_ARCH)))
 ARM_FLOAT_ABI = -DARM_FP_ABI=hard
 else
 ARM_FLOAT_ABI =
 endif
 
-DEB_BUILD_ARCH_OS=$(shell dpkg-architecture -qDEB_BUILD_ARCH_OS)
-ifneq (,$(filter linux,$(DEB_BUILD_ARCH_OS)))
+DEB_HOST_ARCH_OS=$(shell dpkg-architecture -qDEB_HOST_ARCH_OS)
+ifneq (,$(filter linux,$(DEB_HOST_ARCH_OS)))
 LINUX_URBDRC_CLIENT = -DCHANNEL_URBDRC_CLIENT=on
 else
 LINUX_URBDRC_CLIENT = -DCHANNEL_URBDRC_CLIENT=off
