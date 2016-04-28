@@ -1,3 +1,13 @@
+freerdp (1.1.0~git20140921.1.440916e+dfsg1-9) unstable; urgency=medium
+
+  * debian/rules:
+    + Regression fix for usage of DEB_HOST_ARCH vs. DEB_BUILD_ARCH. Switching
+      back to DEB_HOST_ARCH to not break cross-builds. Thanks to Guillem Jover
+      for teaching me about the difference between those two options.
+      (Closes: #822842).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 28 Apr 2016 12:58:12 +0200
+
 freerdp (1.1.0~git20140921.1.440916e+dfsg1-8) unstable; urgency=medium
 
   * debian/rules:
