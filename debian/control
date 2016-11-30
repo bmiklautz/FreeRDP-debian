@@ -34,7 +34,7 @@ Build-Depends:
  libudev-dev [linux-any],
  libdbus-glib-1-dev,
  uuid-dev,
-Standards-Version: 3.9.7
+Standards-Version: 3.9.8
 Homepage: http://www.freerdp.com/
 Vcs-Browser: https://anonscm.debian.org/git/pkg-remote/freerdp.git
 Vcs-Git: https://anonscm.debian.org/git/pkg-remote/freerdp.git
