@@ -1,3 +1,14 @@
+freerdp (1.1.0~git20140921.1.440916e+dfsg1-11) unstable; urgency=medium
+
+  * debian/control:
+    + New maintenance umbrella: Debian Remote Maintainers team.
+    + Temporary fix for FTBFS against libssl1.1-dev: use libssl1.0-dev for
+      now. (Closes:  #828142). But will be reopened with less severity
+      one the package has landed and the bug got auto-closed.
+    + Bump Standards-Version: to 3.9.8. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 30 Nov 2016 13:48:47 +0100
+
 freerdp (1.1.0~git20140921.1.440916e+dfsg1-10) unstable; urgency=medium
 
   * debian/rules:
