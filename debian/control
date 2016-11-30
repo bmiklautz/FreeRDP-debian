@@ -1,8 +1,9 @@
 Source: freerdp
 Section: x11
 Priority: optional
-Maintainer: Mike Gabriel <sunweaver@debian.org>
+Maintainer: Debian Remote Maintainers <pkg-remote-team@lists.alioth.debian.org>
 Uploaders:
+ Mike Gabriel <sunweaver@debian.org>,
  Otavio Salvador <otavio@debian.org>,
  Laszlo Boszormenyi (GCS) <gcs@debian.hu>,
 Build-Depends:
@@ -35,8 +36,8 @@ Build-Depends:
  uuid-dev,
 Standards-Version: 3.9.7
 Homepage: http://www.freerdp.com/
-Vcs-Browser: https://anonscm.debian.org/git/collab-maint/freerdp.git
-Vcs-Git: https://anonscm.debian.org/git/collab-maint/freerdp.git
+Vcs-Browser: https://anonscm.debian.org/git/pkg-remote/freerdp.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-remote/freerdp.git
 
 Package: freerdp-x11
 Architecture: any
