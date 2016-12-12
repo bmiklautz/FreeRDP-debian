@@ -4,7 +4,6 @@ Priority: optional
 Maintainer: Debian Remote Maintainers <pkg-remote-team@lists.alioth.debian.org>
 Uploaders:
  Mike Gabriel <sunweaver@debian.org>,
- Otavio Salvador <otavio@debian.org>,
  Laszlo Boszormenyi (GCS) <gcs@debian.hu>,
 Build-Depends:
  debhelper (>= 9),
