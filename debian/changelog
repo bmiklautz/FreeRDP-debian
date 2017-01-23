@@ -1,3 +1,11 @@
+freerdp (1.1.0~git20140921.1.440916e+dfsg1-12) unstable; urgency=medium
+
+  * debian/control:
+    + Drop Otavio Salvador from Uploaders: field. Thanks for your previous
+      contributions. (Closes: #847251).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 23 Jan 2017 08:59:15 +0100
+
 freerdp (1.1.0~git20140921.1.440916e+dfsg1-11) unstable; urgency=medium
 
   * debian/control:
