@@ -1,3 +1,12 @@
+freerdp (1.1.0~git20140921.1.440916e+dfsg1-13) unstable; urgency=medium
+
+  [ James Clarke ]
+  * debian/patches:
+    + Add 1013_aligned_meminfo_alignment.patch. Fix FTBFS in testsuite on
+      SPARC64 architecture. (Closes: #764432).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 26 Jan 2017 11:40:07 +0100
+
 freerdp (1.1.0~git20140921.1.440916e+dfsg1-12) unstable; urgency=medium
 
   * debian/control:
