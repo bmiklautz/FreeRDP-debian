@@ -19,3 +19,4 @@
 0007_Fix-build-failure-on-x32.patch
 1012_typo-fix.patch
 1013_aligned_meminfo_alignment.patch
+0008-Fix-multiple-security-issues.patch
